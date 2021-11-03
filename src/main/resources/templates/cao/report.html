@@ -61,8 +61,9 @@
     <div id="all">
         <ul class="image">
             <li class="xiang" lay-event="add"><span style="font-size: 150px">+</span></li>
-            <li th:each="map:${report}" style="line-height: 40px;">
-                <form class="layui-form"  lay-filter="reall" id="reall" name="reall">
+
+                </div><li th:each="map:${report}" style="line-height: 40px;">
+            <form class="layui-form"  lay-filter="reall" id="reall" name="reall">
                 <div class="layui-form-item" style="height: 30px;line-height: 30px;">
                     <label class="layui-form-label"  style="text-align: right">就诊号:</label>
                     <div class="layui-input-block" style="text-align: left">
@@ -71,40 +72,39 @@
                 </div>
                 <div class="layui-form-item" style="margin-top: -5px;">
                     <label class="layui-form-label"  style="text-align: right">患者姓名:</label>
-                        <div class="layui-input-block" style="text-align: left">
+                    <div class="layui-input-block" style="text-align: left">
                         <span th:text="${map.reportName}"></span>
                     </div>
                 </div>
-                    <div class="layui-form-item"style="margin-top:-10px;">
-                        <label class="layui-form-label"  style="text-align: right">手机号:</label>
-                        <div class="layui-input-block" style="text-align: left">
-                            <span th:text="${map.phone}"></span>
-                        </div>
+                <div class="layui-form-item"style="margin-top:-10px;">
+                    <label class="layui-form-label"  style="text-align: right">手机号:</label>
+                    <div class="layui-input-block" style="text-align: left">
+                        <span th:text="${map.phone}"></span>
                     </div>
-                    <div class="layui-form-item"style="margin-top:-10px;">
-                        <label class="layui-form-label"  style="text-align: right">身份证号:</label>
-                        <div class="layui-input-block" style="text-align: left">
-                            <span th:text="${map.carido}"></span><span>****</span><span th:text="${map.caridt}"></span>
-                        </div>
+                </div>
+                <div class="layui-form-item"style="margin-top:-10px;">
+                    <label class="layui-form-label"  style="text-align: right">身份证号:</label>
+                    <div class="layui-input-block" style="text-align: left">
+                        <span th:text="${map.carido}"></span><span>****</span><span th:text="${map.caridt}"></span>
                     </div>
+                </div>
                 <div class="layui-form-item"style="margin-top:-10px;">
                     <label class="layui-form-label" style="text-align: right">挂号类型:</label>
                     <div class="layui-input-block"  style="text-align: left">
                         <span th:text="${map.type}"></span>
                     </div>
                 </div>
-                    <div class="layui-form-item"style="margin-top:-10px;">
-                        <label class="layui-form-label" style="text-align: right">挂号时间:</label>
-                        <div class="layui-input-block"  style="text-align: left">
-                            <span th:text="${map.datime}"></span>
-                        </div>
+                <div class="layui-form-item"style="margin-top:-10px;">
+                    <label class="layui-form-label" style="text-align: right">挂号时间:</label>
+                    <div class="layui-input-block"  style="text-align: left">
+                        <span th:text="${map.datime}"></span>
                     </div>
+                </div>
                 <div class="layui-form-item"style="margin-top:-10px;">
                     <label class="layui-form-label" >所属科室:</label>
                     <div class="layui-input-block"  style="text-align: left">
                         <span th:text="${map.department}"></span>
                     </div>
-                </div>
                 <div class="layui-form-item"style="margin-top:-10px;">
                     <label class="layui-form-label" >就诊医生:</label>
                     <div class="layui-input-block" style="text-align: left">

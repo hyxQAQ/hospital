@@ -78,7 +78,7 @@ public class MainController {
         return Total;
     }
     /*
-     * 查询所有人数
+     * 查询住院所有人数
      * */
     @RequestMapping("zhuyuanTotal")
     @ResponseBody
@@ -87,7 +87,7 @@ public class MainController {
         return zhuyuanTotal;
     }
     /*
-     * 查询所有人数
+     * 查询当天住院所有人数
      * */
     @RequestMapping("currentZhuYuan")
     @ResponseBody
